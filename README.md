@@ -9,7 +9,7 @@ npx create-react-app my-app --template motionhungry-mui
 ## Includes
 
 - [ESLint][eslint]
-- [Material UI][material-ui]
+- [Material-UI][material-ui]
 - [React Router][react-router]
 - [React Testing Library][testing-library]
 - [Storybook][storybook]
