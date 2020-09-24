@@ -29,9 +29,16 @@
       "eslint-plugin-react-hooks": "^4.1.2"
     },
     "scripts": {
-      "start": "yarn start",
-      "build": "yarn build",
-      "test": "yarn test"
+      "analyze": "source-map-explorer 'build/static/js/*.js'",
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "test:nowatch": "react-scripts test --watchAll=false",
+      "eject": "react-scripts eject",
+      "lint:fix": "eslint --fix",
+      "lint": "eslint src/",
+      "storybook": "start-storybook -p 9009 -s public",
+      "build-storybook": "build-storybook -s public"
     }
   }
 }
