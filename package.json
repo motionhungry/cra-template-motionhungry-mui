@@ -1,0 +1,10 @@
+{
+  "name": "cra-template-motionhungry-mui",
+  "version": "0.1.0",
+  "description": "A Create React App template for Material UI",
+  "main": "template.json",
+  "repository": "git@github.com:motionhungry/cra-template-motionhungry-mui.git",
+  "author": "Kyle Getrost <kyle@motionhungry.com>",
+  "license": "MIT",
+  "private": false
+}
