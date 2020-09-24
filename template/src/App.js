@@ -9,7 +9,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import NavBar from './components/NavBar';
 import About from './pages/About';
 import Home from './pages/Home';
-import routes from './routes';
+import routes from './config/routes';
 
 const App = () => (
   <Router>
