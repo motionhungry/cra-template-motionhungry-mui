@@ -12,6 +12,8 @@
       "react-scripts": "3.4.3"
     },
     "devDependencies": {
+      "@sentry/react": "^5.24.2",
+      "@sentry/tracing": "^5.24.2",
       "@storybook/addon-actions": "^6.0.21",
       "@storybook/addon-knobs": "^6.0.21",
       "@storybook/addon-links": "^6.0.21",
