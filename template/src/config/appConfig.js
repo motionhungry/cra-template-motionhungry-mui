@@ -4,14 +4,14 @@ export const ENVIRONMENTS = {
 };
 
 export const LOG_LEVELS = {
-  info: 0,
-  debug: 1,
+  deubg: 0,
+  info: 1,
   warn: 2,
   error: 3,
 };
 
 const baseConfig = {
-  sentryDSN: process.env.REACT_APP_NOT_SECRET_CODE,
+  sentryDSN: process.env.REACT_APP_SENTRY_DSN,
   sentryEnabled: true,
   logLevel: LOG_LEVELS.info,
 };
