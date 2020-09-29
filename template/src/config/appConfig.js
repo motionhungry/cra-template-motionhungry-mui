@@ -4,7 +4,7 @@ export const ENVIRONMENTS = {
 };
 
 export const LOG_LEVELS = {
-  deubg: 0,
+  debug: 0,
   info: 1,
   warn: 2,
   error: 3,
