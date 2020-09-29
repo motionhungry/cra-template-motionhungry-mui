@@ -8,9 +8,9 @@ const createLogMessage = (logLevel, sentryLogLevel, msg) => {
       Sentry.captureMessage(msg, { level: sentryLogLevel });
       return;
     }
-    console.log(msg);
+    console.log(msg); // eslint-disable-line no-console
   }
-}
+};
 
 const logger = {
   debug: (msg) => createLogMessage(LOG_LEVELS.debug, 'debug', msg),
@@ -25,7 +25,7 @@ const logger = {
       Sentry.captureException(err);
       return;
     }
-    console.error(err);
+    console.error(err); // eslint-disable-line no-console
   },
 };
 

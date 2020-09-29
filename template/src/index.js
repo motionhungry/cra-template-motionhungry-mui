@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as Sentry from "@sentry/react";
-import { Integrations } from "@sentry/tracing";
+import * as Sentry from '@sentry/react';
+import { Integrations } from '@sentry/tracing';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -16,13 +16,13 @@ if (appConfig.sentryEnabled) {
     ],
     tracesSampleRate: 1.0,
   });
-};
+}
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

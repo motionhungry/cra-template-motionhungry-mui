@@ -30,13 +30,13 @@ const appConfig = {
 };
 
 const getAppConfig = () => {
-  const hostname = window.location.hostname;
+  const { hostname } = window.location;
 
   if (hostname === 'localhost' || hostname.startsWith('192.168')) {
     return appConfig[ENVIRONMENTS.local];
   }
 
   return appConfig[ENVIRONMENTS.production];
-}
+};
 
 export default getAppConfig();
