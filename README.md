@@ -16,6 +16,9 @@ npx create-react-app my-app --template motionhungry-mui
 - [Sentry][sentry]
 - [Storybook][storybook]
 
+## Features
+- Aliases for local module paths: _#components_, _#config_, _#pages_ and _#utils_.
+
 ## License
 
 Licensed under the MIT license.

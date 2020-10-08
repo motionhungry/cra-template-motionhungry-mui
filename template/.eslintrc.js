@@ -7,6 +7,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:import/errors',
+    'plugin:import/warnings',
   ],
   globals: {
     Atomics: 'readonly',
@@ -21,11 +23,29 @@ module.exports = {
   },
   plugins: [
     'react',
+    'module-resolver',
+    'import',
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
     'quotes': ['error', 'single'],
-    'no-console': ['error']
+    'no-console': ['error'],
+    'module-resolver/use-alias': 2,
+    'import/no-unresolved': [2, {commonjs: true, amd: true}],
+    'import/named': 2,
+    'import/namespace': 2,
+    'import/default': 2,
+    'import/export': 2
   },
   overrides: [],
-}
+  settings: {
+    'import/resolver': {
+      'babel-module': {},
+      'node': {
+        extensions: [
+          '.js',
+        ],
+      },
+    },
+  },
+};

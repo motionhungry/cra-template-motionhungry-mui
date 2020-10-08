@@ -7,11 +7,11 @@ import {
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 
-import NavBar from './components/NavBar';
-import routes from './config/routes';
-import theme from './config/theme';
-import About from './pages/About';
-import Home from './pages/Home';
+import NavBar from '#components/NavBar';
+import routes from '#config/routes';
+import theme from '#config/theme';
+import About from '#pages/About';
+import Home from '#pages/Home';
 
 const App = () => (
   <Router>
