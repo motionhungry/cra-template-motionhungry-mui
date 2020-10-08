@@ -1,6 +1,6 @@
 import * as Sentry from '@sentry/react';
 
-import appConfig, { LOG_LEVELS } from '../config/appConfig';
+import appConfig, { LOG_LEVELS } from '#config/appConfig';
 
 const createLogMessage = (logLevel, sentryLogLevel, msg) => {
   if (logLevel >= appConfig.logLevel) {
