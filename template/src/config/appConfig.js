@@ -14,6 +14,7 @@ const baseConfig = {
   sentryDSN: process.env.REACT_APP_SENTRY_DSN,
   sentryEnabled: true,
   logLevel: LOG_LEVELS.info,
+  appVersion: process.env.REACT_APP_VERSION,
 };
 
 const appConfig = {
