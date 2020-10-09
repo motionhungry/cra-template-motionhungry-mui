@@ -17,7 +17,12 @@ npx create-react-app my-app --template motionhungry-mui
 - [Storybook][storybook]
 
 ## Features
-- Aliases for local module paths: _#components_, _#config_, _#pages_ and _#utils_.
+- Aliases for top-level module paths:
+  * _#components_
+  * _#config_
+  * _#constants_
+  * _#pages_
+  * _#utils_
 
 ## License
 

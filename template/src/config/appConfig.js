@@ -1,14 +1,5 @@
-export const ENVIRONMENTS = {
-  local: 'local',
-  production: 'production',
-};
-
-export const LOG_LEVELS = {
-  debug: 0,
-  info: 1,
-  warn: 2,
-  error: 3,
-};
+import ENVIRONMENTS from '#constants/environments';
+import LOG_LEVELS from '#constants/log-levels';
 
 const baseConfig = {
   sentryDSN: process.env.REACT_APP_SENTRY_DSN,
