@@ -11,9 +11,7 @@ if (settings.sentryEnabled) {
   Sentry.init({
     dsn: settings.sentryDSN,
     environment: settings.environment,
-    integrations: [
-      new Integrations.BrowserTracing(),
-    ],
+    integrations: [new Integrations.BrowserTracing()],
     tracesSampleRate: 1.0,
   });
 }

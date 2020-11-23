@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
