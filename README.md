@@ -5,9 +5,6 @@
 ```sh
 npx create-react-app my-app --template motionhungry-mui
 ```
-## Features
-- [TypeScript][typescript]
-
 ## Includes
 
 - [CRACO][craco]
@@ -20,6 +17,7 @@ npx create-react-app my-app --template motionhungry-mui
 - [Storybook][storybook]
 
 ## Features
+- [TypeScript][typescript]
 - Aliases for top-level module paths:
   * _#components_
   * _#config_
