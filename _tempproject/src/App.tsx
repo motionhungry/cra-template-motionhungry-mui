@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import './App.css';
+import NavBar from '#components/NavBar';
+import routes from '#config/routes';
+import theme from '#config/theme';
+import About from '#pages/About';
+import Home from '#pages/Home';
 
-import logger from '#utils/logger';
-
-logger.info('test');
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <Router>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <NavBar />
+      <Switch>
+        <Route path={routes.about}>
+          <About />
+        </Route>
+        <Route path={routes.home}>
+          <Home />
+        </Route>
+      </Switch>
+    </ThemeProvider>
+  </Router>
+);
 
 export default App;
