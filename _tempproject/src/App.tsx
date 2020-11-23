@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
+
 import './App.css';
+
+import logger from '#utils/logger';
+
+logger.info('test');
 
 function App() {
   return (
