@@ -22,9 +22,15 @@ module.exports = {
     },
     ecmaVersion: 2020,
     sourceType: 'module',
+    project: './tsconfig.json',
+    tsconfigRootDir: './',
   },
+  plugins: [
+    'import',
+  ],
   rules: {
     'no-console': ['error'],
+    'sort-imports': 'error',
   },
   settings: {
     react: {
