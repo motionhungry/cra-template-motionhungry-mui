@@ -9,6 +9,7 @@ npx create-react-app my-app --template motionhungry-mui
 
 - [CRACO][craco]
 - [ESLint][eslint]
+- [Husky][husky]
 - [Material-UI][material-ui]
 - [Prettier][prettier]
 - [React Router][react-router]
@@ -31,6 +32,7 @@ Licensed under the MIT license.
 
 [craco]: https://github.com/gsoft-inc/craco
 [eslint]: https://eslint.org
+[husky]: https://github.com/typicode/husky
 [material-ui]: https://www.material-ui.com
 [prettier]: https://prettier.io/
 [react-router]: https://reactrouter.com/web/guides/quick-start
