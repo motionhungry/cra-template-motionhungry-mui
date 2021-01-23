@@ -8,6 +8,7 @@ npx create-react-app my-app --template motionhungry-mui
 ## Includes
 
 - [CRACO][craco]
+- [commitlint][commitlint]
 - [ESLint][eslint]
 - [Husky][husky]
 - [Material-UI][material-ui]
@@ -31,6 +32,7 @@ npx create-react-app my-app --template motionhungry-mui
 Licensed under the MIT license.
 
 [craco]: https://github.com/gsoft-inc/craco
+[commitlint]: https://commitlint.js.org
 [eslint]: https://eslint.org
 [husky]: https://github.com/typicode/husky
 [material-ui]: https://www.material-ui.com
