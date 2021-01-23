@@ -33,7 +33,6 @@ Licensed under the MIT license.
 [eslint]: https://eslint.org
 [material-ui]: https://www.material-ui.com
 [prettier]: https://prettier.io/
-[react-app-rewired]: https://github.com/timarney/react-app-rewired
 [react-router]: https://reactrouter.com/web/guides/quick-start
 [sentry]: https://sentry.io
 [storybook]: https://storybook.js.org
