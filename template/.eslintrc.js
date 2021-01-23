@@ -2,13 +2,16 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    jest: true
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
   ],
   globals: {
     Atomics: 'readonly',
@@ -21,20 +24,34 @@ module.exports = {
       jsx: true,
     },
     ecmaVersion: 2020,
-    sourceType: 'module',
-    project: './tsconfig.json',
+    sourceType: ['module'],
     tsconfigRootDir: './',
   },
-  plugins: [
-    'import',
-  ],
+  plugins: ['import', 'simple-import-sort'],
   rules: {
     'no-console': ['error'],
-    'sort-imports': 'error',
+    'import/order': 'off',
+    'simple-import-sort/imports': 'error',
+    'simple-import-sort/exports': 'error',
+    'import/newline-after-import': ['error', { count: 1 }],
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
   },
   settings: {
     react: {
       version: 'detect',
+    },
+    'import/resolver': {
+      alias: {
+        map: [
+          ['#components', './src/components'],
+          ['#config', './src/config'],
+          ['#pages', './src/pages'],
+          ['#types', './src/types'],
+          ['#utils', './src/utils'],
+        ],
+        extensions: ['.ts', '.js', '.jsx', '.json'],
+      },
     },
   },
 };
