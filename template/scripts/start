@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+REACT_APP_VERSION=local
+craco start

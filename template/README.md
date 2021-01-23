@@ -42,3 +42,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## npm scripts
+This project uses [`scripty`](https://github.com/testdouble/scripty) to organize
+npm scripts. The scripts are defined in the [`scripts`](/scripts) directory.
+In `package.json` you'll see the word `scripty` as opposed to the script
+content you'd expect. For more info, see
+[scripty's GitHub](https://github.com/testdouble/scripty).
