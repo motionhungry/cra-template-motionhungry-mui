@@ -1,0 +1,16 @@
+import { render, screen } from '@testing-library/react';
+
+import {{{ component }}} from '../{{{ component }}}';
+
+describe('<{{{ component }}} />', () => {
+  const setup = () => {
+    const utils = render(<{{{ component }}} />);
+    const component = screen.getByText('{{{ component }}}');
+    return { utils, component };
+  };
+
+  test('it should render the component', () => {
+    const { component } = setup();
+    expect(component).toHaveTextContent('{{{ component }}}');
+  });
+});

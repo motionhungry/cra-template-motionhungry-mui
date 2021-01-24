@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+COMPONENT_NAME=$1
+TEMPLATE_DIR=$(pwd)/.templates/component
+COMPONENT_DIR=$(pwd)/src/components/$COMPONENT_NAME
+
+cp -rf $TEMPLATE_DIR $COMPONENT_DIR
+cd $COMPONENT_DIR
+mv ./__tests__/Component.test.tsx.templ ./__tests__/$COMPONENT_NAME.spec.tsx
+mv ./Component.tsx.templ ./$COMPONENT_NAME.tsx
+mv ./Component.stories.tsx.templ ./$COMPONENT_NAME.stories.tsx
+mv ./index.ts.templ ./index.ts
+grep -rli '{{{ component }}}' * | xargs -I@ sed -i '' 's/{{{ component }}}/'$COMPONENT_NAME'/g' @

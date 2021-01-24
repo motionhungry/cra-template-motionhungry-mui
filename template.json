@@ -60,7 +60,8 @@
       "prettier:fix": "scripty",
       "storybook": "scripty",
       "storybook:build": "scripty",
-      "postinstall": "husky install"
+      "postinstall": "husky install",
+      "createcomponent": "scripty"
     },
     "eslintConfig": {
       "extends": [

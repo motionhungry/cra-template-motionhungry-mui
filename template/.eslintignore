@@ -2,3 +2,4 @@ build/*
 public/*
 craco.config.js
 src/reportWebVitals.ts
+.templates/**/*

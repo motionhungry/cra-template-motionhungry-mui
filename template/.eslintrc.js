@@ -30,6 +30,7 @@ module.exports = {
   plugins: ['import', 'simple-import-sort'],
   rules: {
     'no-console': ['error'],
+    'import/no-unresolved': [2, { caseSensitive: false }],
     'import/order': 'off',
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
